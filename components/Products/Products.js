@@ -28,7 +28,8 @@ class Products {
                     <span class="products-element__price">
                     цена за 1 кг: ${price.toLocaleString()} USD
                     </span>
-                    <span>${saleIndex === -1 ? '' : `скидка ${(saleProduct.sale * 312.5).toFixed(0)}% за каждый ${saleProduct.each}й кг`}</span>
+                    <span>${saleIndex === -1 ? '' : `скидка ${(saleProduct.sale * 100 * saleProduct.each
+                        ).toFixed(0)}% за каждый ${saleProduct.each}й кг`}</span>
                     <div>
                     <button class="products-element__btn" onclick="productsPage.addProduct('${id}');">
                         ${this.labelAdd}
