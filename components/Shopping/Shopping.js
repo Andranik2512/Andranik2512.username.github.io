@@ -27,7 +27,7 @@ class Shopping {
                 const productTotal = price * product.amount - sale;
                 htmlCatalog += `
                     <tr>
-                        <td class="shopping-element__name">⚡️ ${name}</td>
+                        <td class="shopping-element__name"> ${name}</td>
                         <td class="shopping-element__price">${price.toLocaleString()} USD</td>
                         <td class="shopping-element__price">${product.amount}</td>
                         <td class="shopping-element__price">${- sale} USD</td>
@@ -64,7 +64,7 @@ class Shopping {
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td class="shopping-element__name">💥 Итого:</td>
+                            <td class="shopping-element__name">Итого:</td>
                             <td class="shopping-element__price">${sumCatalog.toLocaleString()} USD</td>
                         </tr>
                     </tfoot>
